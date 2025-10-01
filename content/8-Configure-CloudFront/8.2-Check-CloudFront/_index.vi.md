@@ -6,7 +6,7 @@ chapter = false
 pre = "<b>8.2 </b>"
 +++
 
-![cloudfront-test.png](/static/images/8-Configure-CloudFront/8.2-cloudfront-origin-website/8.4.png)
+![cloudfront-test.png](/images/8-Configure-CloudFront/8.2-cloudfront-origin-website/8.4.png)
 
 #### Cập nhật và kiểm tra CloudFront
 Trong phần này, chúng ta sẽ:
@@ -42,14 +42,14 @@ Trong phần này, chúng ta sẽ:
      ```
    - Nhấn **Save changes**.
 
-   ![update-bucket-policy.png](/static/images/8-Configure-CloudFront/8.2-cloudfront-origin-website/8.5.png)
+   ![update-bucket-policy.png](/images/8-Configure-CloudFront/8.2-cloudfront-origin-website/8.5.png)
 
 2. **Tắt Public Access**
    - Trong **Permissions**, chọn **Edit** trong **Block public access**.
    - Bật **Block all public access** và tất cả tùy chọn con, nhấn **Save changes**.
    - Điều này đảm bảo chỉ CloudFront có thể truy cập bucket.
 
-   ![block-public-access.png](/static/images/8-Configure-CloudFront/8.2-cloudfront-origin-website/8.6.png)
+   ![block-public-access.png](/images/8-Configure-CloudFront/8.2-cloudfront-origin-website/8.6.png)
 
 3. **Kiểm tra Website qua CloudFront**
    - Truy cập **Distribution domain name** từ bước 8.1 (ví dụ: `https://d1234567890abcdef.cloudfront.net`) trong trình duyệt.

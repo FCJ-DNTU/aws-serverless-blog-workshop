@@ -11,7 +11,7 @@ chapter = false
 
 In this workshop, you will learn how to deploy a **Serverless Blog Website** on AWS, using **AWS Lambda** to handle backend logic, **API Gateway** to create RESTful APIs, **DynamoDB** as a NoSQL database, **S3** to host static frontends (React/Vite), and **CloudFront** to optimize content delivery performance.
 
-![Workshop Architecture](/static/images/workshop_architecture.png)
+![Workshop Architecture](/images/workshop_architecture.png)
 
 ### Objectives:
 

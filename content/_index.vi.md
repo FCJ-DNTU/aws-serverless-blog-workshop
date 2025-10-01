@@ -11,7 +11,7 @@ chapter = false
 
 Trong workshop này, bạn sẽ học cách triển khai một **Website Blog Serverless** trên AWS, sử dụng **AWS Lambda** để xử lý logic backend, **API Gateway** để tạo API RESTful, **DynamoDB** làm cơ sở dữ liệu NoSQL, **S3** để host frontend tĩnh (React/Vite), và **CloudFront** để tối ưu hiệu suất phân phối nội dung.
 
-![Workshop Architecture](/static/images/workshop_architecture.png)
+![Workshop Architecture](/images/workshop_architecture.png)
 
 ### Mục tiêu:
 

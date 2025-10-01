@@ -1,87 +1,74 @@
 +++
-title = "Clean Up Resources"
+title = "Dọn dẹp tài nguyên"
 date = 2025
 weight = 9
 chapter = false
 pre = "<b>9. </b>"
 +++
 
-#### Clean Up Resources
+#### Dọn dẹp tài nguyên
+Sau khi hoàn thành hội thảo, việc dọn dẹp các tài nguyên AWS là điều cần thiết để tránh phát sinh chi phí ngoài phạm vi Free Tier. Phần này hướng dẫn bạn cách xóa các tài nguyên đã tạo: **CloudFront**, **S3**, **API Gateway**, **Lambda**, **DynamoDB**, và **IAM**.
 
-After completing the workshop, it is necessary to clean up AWS resources to avoid incurring costs outside of the Free Tier. This section guides you through deleting the created resources: **CloudFront**, **S3**, **API Gateway**, **Lambda**, **DynamoDB**, and **IAM**.
+#### Lý do để dọn dẹp:
+- **Tiết kiệm chi phí**: Ngăn chặn các chi phí không cần thiết từ các tài nguyên không còn sử dụng.
+- **Bảo mật**: Loại bỏ quyền IAM và các tài nguyên để tránh rủi ro truy cập trái phép.
+- **Quản Lý Sạch Sẽ**: Giữ cho tài khoản AWS của bạn sạch sẽ cho các dự án trong tương lai.
 
-#### Reasons for cleaning up:
+#### Dọn dẹp tài nguyên
 
-- **Cost Savings**: Prevent unnecessary costs from resources that are no longer in use.
+1. **Xóa Phân phối CloudFront**
+- Truy cập **CloudFront** trong Bảng điều khiển Quản lý AWS. 
+- Chọn phân phối mà bạn đã tạo (ví dụ: `d1234567890abcdef.cloudfront.net`).
+- Nhấp vào **Vô hiệu hóa**, chờ cho trạng thái chuyển sang **Đã vô hiệu hóa**.
+- Nhấp vào **Xóa** để xóa phân phối.
 
-- **Security**: Remove IAM permissions and resources to avoid the risk of unauthorized access.
+![delete-distribution.png](/images/9-Clean-Up-Resources/9.1.png)
 
-- **Clean Management**: Keep your AWS account clean for future projects.
+2. **Xóa Bucket S3**
+- Truy cập **S3** trong AWS Management Console.
+- Chọn bucket mà bạn đã tạo (ví dụ: `blog-workshop-<mã-tài-khoản-của-bạn>`).
+- Nhấp vào **Empty**, nhập `permanently delete` để xác nhận, sau đó chọn **Empty**.
+- Sau khi bucket trống, chọn **Delete**, nhập tên bucket vào hộp xác nhận, sau đó nhấp **Delete bucket**.
 
-#### Clean Up Resources
+![delete-bucket.png](/images/9-Clean-Up-Resources/9.2.png)
 
-1. **Delete CloudFront Distribution**
-- Go to **CloudFront** in the AWS Management Console.
-- Select the distribution you created (e.g. `d1234567890abcdef.cloudfront.net`).
-- Click **Disable**, wait for the status to change to **Disabled**.
-- Click **Delete** to delete the distribution.
+3. **Xóa API Gateway**
 
-![delete-distribution.png](/static/images/9-Clean-Up-Resources/9.1.png)
+- Truy cập **API Gateway** trong Bảng điều khiển Quản lý AWS. 
+- Chọn API `BlogAPI`. 
+- Chọn **Actions** → **Delete**, nhập tên API để xác nhận, sau đó nhấn **Delete**.
 
-2. **Delete S3 Bucket**
-- Go to **S3** in the AWS Management Console.
-- Select the bucket you created (e.g. `blog-workshop-<your-account-id>`).
-- Click **Empty**, enter `permanently delete` to confirm, then select **Empty**.
-- After the bucket is empty, select **Delete**, enter the bucket name in the confirmation box, then click **Delete bucket**.
+![delete-api.png](/images/9-Clean-Up-Resources/9.3.png)
 
-![delete-bucket.png](/static/images/9-Clean-Up-Resources/9.2.png)
+4. **Xóa các Hàm Lambda**
 
-3. **Delete API Gateway**
+- Vào **Lambda** trong AWS Management Console. 
+- Chọn hàm `getPosts`, nhấn **Actions** → **Delete**, xác nhận việc xóa. 
+- Lặp lại cho hàm `createPost`.
 
-- Go to **API Gateway** in AWS Management Console.
+![delete-lambda.png](/images/9-Clean-Up-Resources/9.4.png)
 
-- Select API `BlogAPI`.
+5. **Xóa Bảng DynamoDB**
 
-- Select **Actions** → **Delete**, enter the API name to confirm, then click **Delete**.
+- Truy cập **DynamoDB** trong Bảng điều khiển quản lý AWS. 
+- Chọn bảng `Posts`. 
+- Nhấp **Hành động** → **Xóa bảng**, nhập tên bảng để xác nhận, sau đó nhấp **Xóa**.
 
-![delete-api.png](/static/images/9-Clean-Up-Resources/9.3.png)
+![delete-table.png](/images/9-Clean-Up-Resources/9.5.png)
 
-4. **Delete Lambda Functions**
+6. **Xóa các tài nguyên IAM**
 
-- Go to **Lambda** in AWS Management Console.
+- Vào **IAM** trong Bảng điều khiển quản lý AWS.
+- Trong **Policies**, chọn chính sách `lambda-blog-policy` (hoặc tương tự), nhấp vào **Delete**, xác nhận việc xóa.
+- Trong **Roles**, chọn vai trò `lambda-blog-role`, nhấp vào **Delete**, xác nhận việc xóa.
 
-- Select function `getPosts`, click **Actions** → **Delete**, confirm deletion.
-- Repeat for the `createPost` function.
-
-![delete-lambda.png](/static/images/9-Clean-Up-Resources/9.4.png)
-
-5. **Delete DynamoDB Table**
-
-- Go to **DynamoDB** in the AWS Management Console.
-
-- Select the `Posts` table.
-
-- Click **Actions** → **Delete table**, enter the table name to confirm, then click **Delete**.
-
-![delete-table.png](/static/images/9-Clean-Up-Resources/9.5.png)
-
-6. **Delete IAM Resources**
-
-- Go to **IAM** in the AWS Management Console.
-
-- In **Policies**, select the `lambda-blog-policy` policy (or similar), click **Delete**, confirm the deletion.
-- In **Roles**, select the role `lambda-blog-role`, click **Delete**, confirm deletion.
-
-![delete-iam.png](/static/images/9-Clean-Up-Resources/9.6.png)
+![delete-iam.png](/images/9-Clean-Up-Resources/9.6.png)
 
 {{% notice warning %}}
-- Make sure the S3 bucket is empty before deleting.
-
-- Double check the resources to make sure they are not accidentally deleted from another project.
-
-- If you encounter an error when deleting (e.g. a resource is in use), check the dependencies (such as Lambda permissions or API Gateway integrations).
-
+- Đảm bảo rằng bucket S3 trống trước khi xóa. 
+- Kiểm tra kỹ các tài nguyên để đảm bảo chúng không bị xóa nhầm từ dự án khác. 
+- Nếu gặp lỗi khi xóa (ví dụ: một tài nguyên đang được sử dụng), kiểm tra các phụ thuộc (chẳng hạn như quyền Lambda hoặc tích hợp API Gateway).
 {{% /notice %}}
 
-#### Done
-- You have deleted all resources related to the workshop, ensuring no costs are incurred.
+#### Hoàn Thành
+- Bạn đã xóa tất cả các tài nguyên liên quan đến hội thảo, đảm bảo không phát sinh chi phí.

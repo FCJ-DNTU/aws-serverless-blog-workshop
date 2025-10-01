@@ -6,7 +6,7 @@ chapter = false
 pre = "<b>6. </b>"
 +++
 
-![frontend-overview.png](/static/images/6-Prepare-Frontend-Application/6.1.png)
+![frontend-overview.png](/images/6-Prepare-Frontend-Application/6.1.png)
 
 #### Ứng dụng Frontend
 
@@ -48,7 +48,7 @@ Trong phần này, chúng ta sẽ:
      npm install
      ```
 
-   ![create-vite.png](/static/images/6-Prepare-Frontend-Application/6.2.png)
+   ![create-vite.png](/images/6-Prepare-Frontend-Application/6.2.png)
 
 2. **Cài đặt thư viện bổ sung**
    - Cài `axios` để gọi API Gateway:
@@ -56,7 +56,7 @@ Trong phần này, chúng ta sẽ:
      npm install axios
      ```
 
-   ![install-axios.png](/static/images/6-Prepare-Frontend-Application/6.3.png)
+   ![install-axios.png](/images/6-Prepare-Frontend-Application/6.3.png)
 
 3. **Cấu hình mã nguồn**
    - Thay nội dung file `src/App.jsx` bằng mã sau để hiển thị danh sách bài viết và form tạo bài viết:
@@ -170,12 +170,12 @@ Trong phần này, chúng ta sẽ:
      }
      ```
 
-   ![code-app.png](/static/images/6-Prepare-Frontend-Application/6.4.png)
+   ![code-app.png](/images/6-Prepare-Frontend-Application/6.4.png)
 
 4. **Cấu hình API URL**
    - Thay `<Invoke URL>` trong `src/App.jsx` bằng **Invoke URL** từ bước 5 (API Gateway), ví dụ: `https://<api-id>.execute-api.<region>.amazonaws.com/prod/posts`.
 
-   ![configure-api-url.png](/static/images/6-Prepare-Frontend-Application/6.5.png)
+   ![configure-api-url.png](/images/6-Prepare-Frontend-Application/6.5.png)
 
 5. **Kiểm tra ứng dụng**
    - Chạy ứng dụng cục bộ:

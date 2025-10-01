@@ -23,7 +23,7 @@ pre = "<b>3.1 </b>"
 2. Select the **Amazon DynamoDB** service.
 3. In the navigation menu, select [Tables](https://ap-southeast-1.console.aws.amazon.com/dynamodbv2/home?region=ap-southeast-1#tables/)
 
-![dynamodb-interface.png](/images/3-Create-DynamoDB-Table/3.1-create-dynamodb-table/3.0.png)
+![dynamodb-interface.png](/images/3-Create-DynamoDB-Table/3.1-create-dynamodb-table/3.1.png)
 
 4. Select **Create table**.
 5. In the **Create table** interface:
@@ -35,7 +35,7 @@ pre = "<b>3.1 </b>"
 
 - Click **Create table**.
 
-![create-table.png](/images/3-Create-DynamoDB-Table/3.1-create-dynamodb-table/3.1.png)
+![create-table.png](/images/3-Create-DynamoDB-Table/3.1-create-dynamodb-table/3.0.png)
 6. Check the table:
 - After creation, the `BlogPosts` table will appear in the **Tables** list with the status **Active**.
 

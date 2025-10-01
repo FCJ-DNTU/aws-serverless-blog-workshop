@@ -19,7 +19,7 @@ pre = "<b>3.1 </b>"
 2. Chọn dịch vụ **Amazon DynamoDB**.
 3. Trong menu điều hướng, chọn [Tables](https://ap-southeast-1.console.aws.amazon.com/dynamodbv2/home?region=ap-southeast-1#tables/)
 
-![dynamodb-interface.png](/images/3-Create-DynamoDB-Table/3.1-create-dynamodb-table/3.0.png)
+![dynamodb-interface.png](/images/3-Create-DynamoDB-Table/3.1-create-dynamodb-table/3.1.png)
 
 4. Chọn **Create table**.
 5. Trong giao diện **Create table**:
@@ -28,7 +28,7 @@ pre = "<b>3.1 </b>"
    - **Settings**: Chọn **Default settings** (chế độ **On-demand**, phù hợp với Free Tier).
    - Nhấn **Create table**.
 
-![create-table.png](/images/3-Create-DynamoDB-Table/3.1-create-dynamodb-table/3.1.png)
+![create-table.png](/images/3-Create-DynamoDB-Table/3.1-create-dynamodb-table/3.0.png)
 
 6. Kiểm tra bảng:
    - Sau khi tạo, bảng `BlogPosts` sẽ xuất hiện trong danh sách **Tables** với trạng thái **Active**.

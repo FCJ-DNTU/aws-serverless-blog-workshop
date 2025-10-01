@@ -61,95 +61,101 @@ Chọn **JSON tab** và dán JSON bên dưới vào **Policy Editor**, sau đó 
     }
   ]
 }
+```
+![create-policy.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/2.4.png)
+![finish-policy.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/2.5.png)
 
+{{% notice note %}}
 Policy này cho phép Lambda thực hiện dynamodb:Scan (lấy bài viết) và dynamodb:PutItem (tạo bài viết) trên bảng BlogPosts trong region us-east-1.
 Quyền CloudWatch Logs (logs:*) cho phép Lambda ghi log.
+{{% /notice %}}
 
-2.4. Bước 2 - Review and create
-
-Policy name: lambda-dynamodb-access
-
-Description: Allow Lambda to access DynamoDB BlogPosts table and CloudWatch Logs in us-east-1
-
-Chọn Create policy
-
-3. Tạo IAM Role cho Lambda
+#### 3. Tạo IAM Role cho Lambda
+{{% notice info %}}
 IAM Role được gán cho Lambda functions để cấp quyền truy cập. Policy lambda-dynamodb-access sẽ được gắn vào role này.
+{{% /notice %}}
 
-3.1. Truy cập Roles trong IAM Console
-3.2. Chọn Create role
-3.3. Trong giao diện Create role:
+- 3.1. Truy cập Roles trong IAM Console
+- 3.2. Chọn Create role
+- 3.3. Trong giao diện Create role:
+![Create-IAM-Role-for-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.1.png)
+![Create-IAM-Role-for-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.2.png)
+![Create-IAM-Role-for-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.3.png)
 
+{{% notice note %}}
 Chọn AWS service làm Trusted entity type
-
 Chọn Lambda trong Use case
-
 Chọn Next
+{{% /notice %}}
 
-3.4. Trong Add permissions:
+- 3.4. Trong Add permissions:
 
+{{% notice note %}}
 Tìm và chọn policy lambda-dynamodb-access
-
 (Tuỳ chọn) Thêm AWSLambdaBasicExecutionRole để bổ sung quyền CloudWatch Logs cơ bản
-
 Chọn Next
+{{% /notice %}}
+![Add-permissions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.4.png)
+![Add-permissions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.4.1.png)
+- 3.5. Trong Name, review, and create:
 
-3.5. Trong Name, review, and create:
-
+{{% notice note %}}
 Role name: lambda-blog-role
-
 Description: Role for Lambda to access DynamoDB BlogPosts table
-
 Chọn Create role
+{{% /notice %}}
+![Finish-IAM-Role-for-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.5.png)
+#### 4. Gán IAM Role cho Lambda Functions
+- 4.1. Truy cập Lambda Console
+- 4.2. Mở function getPosts:
 
-4. Gán IAM Role cho Lambda Functions
-4.1. Truy cập Lambda Console
-4.2. Mở function getPosts:
-
+{{% notice note %}}
 Đi tới Configuration → Permissions
-
 Trong Execution role, chọn Edit
-
 Chọn Existing role → lambda-blog-role
-
 Chọn Save
+{{% /notice %}}
+![Assign-IAM-Role-to-Lambda-Functions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.1.png)
+![Assign-IAM-Role-to-Lambda-Functions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.2.png)
+- 4.3. Lặp lại bước 4.2 cho function createPost
+![Assign-IAM-Role-to-Lambda-Functions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.3.png)
+![Assign-IAM-Role-to-Lambda-Functions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.3.1.png)
+- 4.4. Kiểm tra quyền:
 
-4.3. Lặp lại bước 4.2 cho function createPost
-
-4.4. Kiểm tra quyền:
-
+{{% notice note %}}
 Trong IAM Console, mở role lambda-blog-role
-
 Đảm bảo policy lambda-dynamodb-access đã được gắn
-
 Xác minh ARN của bảng BlogPosts trong policy khớp với bảng DynamoDB của bạn (vd: arn:aws:dynamodb:us-east-1:<account-id>:table/BlogPosts)
-
-5. Kiểm tra IAM Role với Lambda
-5.1. Đăng nhập bằng IAM User (không dùng Root User)
-5.2. Test function getPosts trong Lambda Console:
-
+{{% /notice %}}
+![Verify-in-the-IAM-Console.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.4.png)
+![Verify-in-the-IAM-Console.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.4.1.png)
+#### 5. Kiểm tra IAM Role với Lambda
+- 5.1. Đăng nhập bằng IAM User (không dùng Root User)
+- 5.2. Test function getPosts trong Lambda Console:
+{{% notice note %}}
 Đi tới tab Test, tạo event với {}
-
 Nhấn Test
-
 Kết quả mong đợi:
-
-json
-Sao chép
-Chỉnh sửa
+{{% /notice %}}
+![Test-the-IAM-Role-with-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/5.1.png)
+```json
 {
   "statusCode": 200,
   "body": "[]",
   "headers": { "Content-Type": "application/json" }
 }
+```
+{{% notice note %}}
 (hoặc danh sách bài viết nếu bảng BlogPosts có dữ liệu).
+{{% /notice %}}
 
-5.3. Nếu gặp lỗi (vd: AccessDenied):
+- 5.3. Nếu gặp lỗi (vd: AccessDenied):
 
+{{% notice note %}}
 Kiểm tra CloudWatch Logs
-
 Đảm bảo ARN trong policy khớp với bảng DynamoDB
-
 Xác minh region = us-east-1 và biến môi trường TABLE_NAME=BlogPosts
+{{% /notice %}}
+
 
 Hoàn thành! Bạn đã tạo IAM Role và Policy cho Lambda functions để truy cập DynamoDB.

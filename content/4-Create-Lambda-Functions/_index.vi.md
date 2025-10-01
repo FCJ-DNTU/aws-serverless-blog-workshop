@@ -78,26 +78,26 @@ export const handler = async () => {
     };
   }
 };
-
-
+```
+{{% notice note %}}
 Thêm environment variable:
 Trong tab Configuration → Environment variables, chọn Edit.
 Thêm: TABLE_NAME = BlogPosts.
 Nhấn Save.
-
-
-
+{{% /notice %}}
 
 #### 5. Tạo function createPost
 
+{{% notice note %}}
 Lặp lại bước 2-3 để tạo function mới với:
 Function name: createPost.
 Runtime: Node.js 20.x.
 Role: lambda-blog-role.
-
+{{% /notice %}}
 
 Thay mã trong index.mjs bằng:
 
+```
 import { DynamoDBClient, PutItemCommand } from '@aws-sdk/client-dynamodb';
 import { marshall } from '@aws-sdk/util-dynamodb';
 
@@ -129,15 +129,16 @@ export const handler = async (event) => {
     };
   }
 };
-
-
+```
+{{% notice note %}}
 Thêm environment variable TABLE_NAME = BlogPosts như bước 4.
-
+{{% /notice %}}
 
 #### 6. Cấu hình package.json
 
 Để thêm dependency @aws-sdk/client-dynamodb và @aws-sdk/util-dynamodb, tạo file package.json trong thư mục mã nguồn:
 
+```
 {
   "name": "lambda-blog",
   "version": "1.0.0",
@@ -147,51 +148,31 @@ Thêm environment variable TABLE_NAME = BlogPosts như bước 4.
     "@aws-sdk/util-dynamodb": "^3.0.0"
   }
 }
+```
 
-
-Đóng gói mã:
-Tạo thư mục cục bộ cho mỗi function (ví dụ: getPosts/, createPost/).
-Chạy npm install trong mỗi thư mục.
-Nén thư mục thành file .zip (bao gồm node_modules, index.mjs, package.json).
-Upload file .zip vào Lambda trong tab Code → Upload from → .zip file.
+## Đóng gói mã:
+- Tạo thư mục cục bộ cho mỗi function (ví dụ: getPosts/, createPost/).
+- Chạy npm install trong mỗi thư mục.
+- Nén thư mục thành file .zip (bao gồm node_modules, index.mjs, package.json).
+- Upload file .zip vào Lambda trong tab Code → Upload from → .zip file.
 
 
 {{% notice warning %}}
-
 Đảm bảo sử dụng ES Module (index.mjs) và handler là index.handler.
 File .zip phải bao gồm node_modules để tránh lỗi thiếu dependency.
-Environment variable TABLE_NAME phải khớp với tên bảng DynamoDB (BlogPosts).{{% /notice %}}
+Environment variable TABLE_NAME phải khớp với tên bảng DynamoDB (BlogPosts).
+{{% /notice %}}
 
 #### 7. Kiểm tra Lambda Functions
 
 Trong giao diện mỗi function, chọn tab Test:
+```
 Đối với getPosts, tạo event với JSON rỗng {}.
 Đối với createPost, tạo event mẫu:{
   "body": "{\"postId\": \"1\", \"title\": \"Test Post\", \"content\": \"This is a test post.\"}"
 }
+```
 
-
-Nhấn Test và kiểm tra kết quả:
-getPosts: Trả về danh sách bài viết (hoặc mảng rỗng nếu chưa có dữ liệu).
-createPost: Trả về thông báo { "message": "Post created successfully" }.
-
-
-Nếu gặp lỗi (ví dụ: AccessDenied):
-Kiểm tra CloudWatch Logs trong tab Monitor → Logs.
-Đảm bảo IAM Role lambda-blog-role có quyền dynamodb:Scan và dynamodb:PutItem.
-Xác minh environment variable TABLE_NAME là BlogPosts.
-
-
-
-#### 8. Xác nhận và tiếp tục
-
-Sau khi kiểm tra, cả hai functions (getPosts, createPost) đều hoạt động đúng.
-Các functions này sẵn sàng tích hợp với API Gateway ở bước tiếp theo.
-
-
-Hoàn thành
-
-Bạn đã tạo và cấu hình hai Lambda functions để xử lý bài viết trong bảng BlogPosts.
-Tiếp theo: Cấu hình API Gateway.
-
-
+## Nhấn Test và kiểm tra kết quả:
+- getPosts: Trả về danh sách bài viết (hoặc mảng rỗng nếu chưa có dữ liệu).
+- createPost: Trả về thông báo { "message": "Post created successfully" }.

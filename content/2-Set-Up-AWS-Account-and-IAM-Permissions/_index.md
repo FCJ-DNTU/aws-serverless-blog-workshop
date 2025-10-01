@@ -31,7 +31,6 @@ In **this section**, we will create an **IAM Role** and **Policy** to allow Lamb
 
 2.3. **Step 1 - Specify permissions**  
 Select **JSON tab** and paste the JSON below into **Policy Editor**, then select **Next**:
-
 ```json
 { 
   "Version": "2012-10-17", 
@@ -61,6 +60,9 @@ Select **JSON tab** and paste the JSON below into **Policy Editor**, then select
   ]
 }
 ```
+![create-policy.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/2.4.png)
+![finish-policy.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/2.5.png)
+
 {{% notice note %}}
 This policy allows Lambda to perform dynamodb:Scan (get posts) and dynamodb:PutItem (create posts) on the BlogPosts table in the us-east-1 region.
 CloudWatch Logs permissions allow Lambda to write logs.
@@ -74,6 +76,9 @@ The lambda-dynamodb-access policy will be attached to this role.
 - 3.1. Go to Roles in the IAM Console.
 - 3.2. Select Create role.
 - 3.3. In the Create role interface:
+![Create-IAM-Role-for-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.1.png)
+![Create-IAM-Role-for-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.2.png)
+![Create-IAM-Role-for-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.3.png)
 
 {{% notice note %}}
 Select AWS service as the trusted entity type.
@@ -88,7 +93,8 @@ Find and select the lambda-dynamodb-access policy.
 (Optional) Add AWSLambdaBasicExecutionRole for basic CloudWatch Logs permissions.
 Click Next.
 {{% /notice %}}
-
+![Add-permissions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.4.png)
+![Add-permissions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.4.1.png)
 - 3.5. In Name, review, and create:
 
 {{% notice note %}}
@@ -96,7 +102,7 @@ Role name: lambda-blog-role.
 Description: Role for Lambda to access DynamoDB BlogPosts table.
 Click Create role.
 {{% /notice %}}
-
+![Finish-IAM-Role-for-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/3.5.png)
 #### 4. Assign IAM Role to Lambda Functions
 - 4.1. Go to the Lambda Console.
 - 4.2. Open the getPosts function:
@@ -107,9 +113,11 @@ Click Edit on the execution role.
 Choose Existing role → lambda-blog-role.
 Save.
 {{% /notice %}}
-
+![Assign-IAM-Role-to-Lambda-Functions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.1.png)
+![Assign-IAM-Role-to-Lambda-Functions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.2.png)
 - 4.3. Repeat for the createPost function.
-
+![Assign-IAM-Role-to-Lambda-Functions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.3.png)
+![Assign-IAM-Role-to-Lambda-Functions.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.3.1.png)
 - 4.4. Verify in the IAM Console:
 
 {{% notice note %}}
@@ -117,7 +125,8 @@ Open the lambda-blog-role.
 Ensure the lambda-dynamodb-access policy is attached.
 Confirm the DynamoDB ARN matches your table.
 {{% /notice %}}
-
+![Verify-in-the-IAM-Console.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.4.png)
+![Verify-in-the-IAM-Console.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/4.4.1.png)
 #### 5. Test the IAM Role with Lambda
 - 5.1. Log in with an IAM User (not Root).
 - 5.2. Test getPosts function in Lambda:
@@ -127,7 +136,7 @@ Go to the Test tab, create an event with {}.
 Click Test.
 Expected result:
 {{% /notice %}}
-
+![Test-the-IAM-Role-with-Lambda.png](/images/2-Set-Up-AWS-Account-and-IAM-Permissions/5.1.png)
 ```json
 {
   "statusCode": 200,

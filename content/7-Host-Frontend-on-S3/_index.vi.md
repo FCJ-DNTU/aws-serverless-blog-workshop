@@ -6,7 +6,7 @@ chapter = false
 pre = "<b>7. </b>"
 +++
 
-![s3-overview.png](/static/images/7-Host-Frontend-on-S3/7.1.png)
+![s3-overview.png](/images/7-Host-Frontend-on-S3/7.1.png)
 
 #### Amazon S3
 
@@ -30,7 +30,7 @@ Trong phần này, chúng ta sẽ:
 1. **Truy cập AWS Management Console**
    - Tìm và chọn **S3** trong AWS Console.
 
-   ![search-s3.png](/static/images/7-Host-Frontend-on-S3/7.2.png)
+   ![search-s3.png](/images/7-Host-Frontend-on-S3/7.2.png)
 
 2. **Tạo S3 Bucket**
    - Trong giao diện **S3**, chọn **Buckets** → **Create bucket**.
@@ -40,7 +40,7 @@ Trong phần này, chúng ta sẽ:
    - **Block Public Access settings**: Tạm giữ nguyên mặc định (sẽ cập nhật sau).
    - Nhấn **Create bucket**.
 
-   ![create-bucket.png](/static/images/7-Host-Frontend-on-S3/7.4.png)
+   ![create-bucket.png](/images/7-Host-Frontend-on-S3/7.4.png)
 
 3. **Bật Static Website Hosting**
    - Mở bucket vừa tạo, chọn tab **Properties**.
@@ -50,7 +50,7 @@ Trong phần này, chúng ta sẽ:
    - Nhấn **Save changes**.
    - Lưu **Bucket website endpoint** (ví dụ: `http://blog-workshop-<your-account-id>.s3-website-<region>.amazonaws.com`).
 
-   ![enable-static-hosting.png](/static/images/7-Host-Frontend-on-S3/7.5.png)
+   ![enable-static-hosting.png](/images/7-Host-Frontend-on-S3/7.5.png)
 
 4. **Cấu hình quyền truy cập**
    - Trong tab **Permissions**, chọn **Edit** trong **Block public access**.
@@ -71,7 +71,7 @@ Trong phần này, chúng ta sẽ:
      ```
    - Nhấn **Save changes**.
 
-   ![bucket-policy.png](/static/images/7-Host-Frontend-on-S3/7.6.png)
+   ![bucket-policy.png](/images/7-Host-Frontend-on-S3/7.6.png)
 
 5. **Upload file frontend**
    - Trong thư mục `code/frontend/` (từ bước 6), chạy lệnh build nếu chưa thực hiện:
@@ -82,7 +82,7 @@ Trong phần này, chúng ta sẽ:
    - Trong bucket, chọn **Upload** và upload toàn bộ thư mục `dist/`.
    - Đảm bảo tất cả file (HTML, CSS, JS) được upload với **Content-Type** mặc định.
 
-   ![upload-files.png](/static/images/7-Host-Frontend-on-S3/7.7.png)
+   ![upload-files.png](/images/7-Host-Frontend-on-S3/7.7.png)
 
 6. **Kiểm tra website**
    - Truy cập **Bucket website endpoint** trong trình duyệt (ví dụ: `http://blog-workshop-<your-account-id>.s3-website-<region>.amazonaws.com`).

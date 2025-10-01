@@ -27,12 +27,12 @@ Trong phần này, chúng ta sẽ:
 1. **Truy cập AWS Management Console**
    - Tìm và chọn **CloudFront** trong AWS Console.
 
-   ![search-cloudfront.png](/static/images/8-Configure-CloudFront/8.1-create-cloudfront/8.1.png)
+   ![search-cloudfront.png](/images/8-Configure-CloudFront/8.1-create-cloudfront/8.1.png)
 
 2. **Tạo Distribution**
    - Trong giao diện **CloudFront**, chọn **Distributions** → **Create distribution**.
 
-   ![create-distribution.png](/static/images/8-Configure-CloudFront/8.1-create-cloudfront/8.2.png)
+   ![create-distribution.png](/images/8-Configure-CloudFront/8.1-create-cloudfront/8.2.png)
 
 3. **Cấu hình Distribution**
    - **Origin domain**: Chọn S3 bucket đã tạo (ví dụ: `blog-workshop-<your-account-id>`).
@@ -46,13 +46,12 @@ Trong phần này, chúng ta sẽ:
    - **Web Application Firewall (WAF)**: Chọn **Do not enable security protections**.
    - Các phần còn lại giữ mặc định, cuộn xuống và nhấn **Create distribution**.
 
-   ![configure-settings.png]()
 
 4. **Chờ Distribution khởi tạo**
    - Quá trình khởi tạo mất khoảng 4-5 phút.
    - Sau khi hoàn thành, ghi lại **Distribution domain name** (ví dụ: `d1234567890abcdef.cloudfront.net`).
 
-   ![distribution-created.png](/static/images/8-Configure-CloudFront/8.1-create-cloudfront/8.3.png)
+   ![distribution-created.png](/images/8-Configure-CloudFront/8.1-create-cloudfront/8.3.png)
 
 {{% notice warning %}}
 - Đảm bảo chọn đúng S3 bucket làm origin.
