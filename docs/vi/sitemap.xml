@@ -2,236 +2,236 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/vi/1-introduction/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/1-introduction/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduction/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/1-introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduction/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/1-introduction/"
                 />
   </url><url>
-    <loc>/vi/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/"
                 />
   </url><url>
-    <loc>/vi/2-set-up-aws-account-and-iam-permissions/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/2-set-up-aws-account-and-iam-permissions/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-set-up-aws-account-and-iam-permissions/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/2-set-up-aws-account-and-iam-permissions/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-set-up-aws-account-and-iam-permissions/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/2-set-up-aws-account-and-iam-permissions/"
                 />
   </url><url>
-    <loc>/vi/3-create-dynamodb-table/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/3-create-dynamodb-table/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-create-dynamodb-table/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/3-create-dynamodb-table/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-create-dynamodb-table/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/3-create-dynamodb-table/"
                 />
   </url><url>
-    <loc>/vi/3-create-dynamodb-table/3.1-create-dynamodb-table/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/3-create-dynamodb-table/3.1-create-dynamodb-table/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-create-dynamodb-table/3.1-create-dynamodb-table/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/3-create-dynamodb-table/3.1-create-dynamodb-table/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-create-dynamodb-table/3.1-create-dynamodb-table/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/3-create-dynamodb-table/3.1-create-dynamodb-table/"
                 />
   </url><url>
-    <loc>/vi/4-create-lambda-functions/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/4-create-lambda-functions/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-create-lambda-functions/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/4-create-lambda-functions/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-create-lambda-functions/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/4-create-lambda-functions/"
                 />
   </url><url>
-    <loc>/vi/3-create-dynamodb-table/3.2-add-sample-data/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/3-create-dynamodb-table/3.2-add-sample-data/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-create-dynamodb-table/3.2-add-sample-data/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/3-create-dynamodb-table/3.2-add-sample-data/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-create-dynamodb-table/3.2-add-sample-data/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/3-create-dynamodb-table/3.2-add-sample-data/"
                 />
   </url><url>
-    <loc>/vi/5-configure-api-gateway/5.2-api-test-configuration/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/5-configure-api-gateway/5.2-api-test-configuration/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-configure-api-gateway/5.2-api-test-configuration/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/5-configure-api-gateway/5.2-api-test-configuration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-configure-api-gateway/5.2-api-test-configuration/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/5-configure-api-gateway/5.2-api-test-configuration/"
                 />
   </url><url>
-    <loc>/vi/5-configure-api-gateway/5.1-create-rest-api/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/5-configure-api-gateway/5.1-create-rest-api/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-configure-api-gateway/5.1-create-rest-api/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/5-configure-api-gateway/5.1-create-rest-api/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-configure-api-gateway/5.1-create-rest-api/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/5-configure-api-gateway/5.1-create-rest-api/"
                 />
   </url><url>
-    <loc>/vi/5-configure-api-gateway/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/5-configure-api-gateway/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-configure-api-gateway/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/5-configure-api-gateway/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-configure-api-gateway/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/5-configure-api-gateway/"
                 />
   </url><url>
-    <loc>/vi/6-prepare-frontend-application/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/6-prepare-frontend-application/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-prepare-frontend-application/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/6-prepare-frontend-application/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-prepare-frontend-application/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/6-prepare-frontend-application/"
                 />
   </url><url>
-    <loc>/vi/7-host-frontend-on-s3/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/7-host-frontend-on-s3/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-host-frontend-on-s3/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/7-host-frontend-on-s3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-host-frontend-on-s3/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/7-host-frontend-on-s3/"
                 />
   </url><url>
-    <loc>/vi/8-configure-cloudfront/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/8-configure-cloudfront/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/8-configure-cloudfront/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/8-configure-cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/8-configure-cloudfront/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/8-configure-cloudfront/"
                 />
   </url><url>
-    <loc>/vi/8-configure-cloudfront/8.1-create-cloudfront-distribution/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/8-configure-cloudfront/8.1-create-cloudfront-distribution/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/8-configure-cloudfront/8.1-create-cloudfront-distribution/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/8-configure-cloudfront/8.1-create-cloudfront-distribution/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/8-configure-cloudfront/8.1-create-cloudfront-distribution/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/8-configure-cloudfront/8.1-create-cloudfront-distribution/"
                 />
   </url><url>
-    <loc>/vi/8-configure-cloudfront/8.2-check-cloudfront/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/8-configure-cloudfront/8.2-check-cloudfront/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/8-configure-cloudfront/8.2-check-cloudfront/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/8-configure-cloudfront/8.2-check-cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/8-configure-cloudfront/8.2-check-cloudfront/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/8-configure-cloudfront/8.2-check-cloudfront/"
                 />
   </url><url>
-    <loc>/vi/9-clean-up-resources/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/9-clean-up-resources/</loc>
     <lastmod>1970-01-01T07:33:45+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/9-clean-up-resources/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/9-clean-up-resources/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/9-clean-up-resources/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/9-clean-up-resources/"
                 />
   </url><url>
-    <loc>/vi/categories/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/categories/"
                 />
   </url><url>
-    <loc>/vi/tags/</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/tags/"
                 />
   </url>
 </urlset>

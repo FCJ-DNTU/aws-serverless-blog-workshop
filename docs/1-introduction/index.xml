@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on AWS Account Setup</title>
-    <link>/1-introduction/</link>
+    <link>https://baoanh020603.github.io/aws-serverless-blog-workshop/1-introduction/</link>
     <description>Recent content in Introduction on AWS Account Setup</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="/1-introduction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://baoanh020603.github.io/aws-serverless-blog-workshop/1-introduction/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>/en/sitemap.xml</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/en/sitemap.xml</loc>
     
       <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>/vi/sitemap.xml</loc>
+    <loc>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/sitemap.xml</loc>
     
       <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     

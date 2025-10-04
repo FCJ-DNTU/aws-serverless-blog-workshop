@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Workshop: Deploying a Serverless Blog Website on AWS with Lambda, API Gateway, DynamoDB, S3 &amp; CloudFront on AWS Account Setup</title>
-    <link>/</link>
-    <description>Recent content in Workshop: Deploying a Serverless Blog Website on AWS with Lambda, API Gateway, DynamoDB, S3 &amp; CloudFront on AWS Account Setup</description>
+    <title>Workshop: Building an End-to-End Machine Learning Pipeline on AWS with Lambda, API Gateway, S3, SageMaker &amp; DynamoDB on AWS Account Setup</title>
+    <link>https://baoanh020603.github.io/aws-serverless-blog-workshop/</link>
+    <description>Recent content in Workshop: Building an End-to-End Machine Learning Pipeline on AWS with Lambda, API Gateway, S3, SageMaker &amp; DynamoDB on AWS Account Setup</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://baoanh020603.github.io/aws-serverless-blog-workshop/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

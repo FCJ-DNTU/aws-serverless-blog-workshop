@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tạo REST API on Thiết lập AWS Account</title>
-    <link>/vi/5-configure-api-gateway/5.1-create-rest-api/</link>
+    <link>https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/5-configure-api-gateway/5.1-create-rest-api/</link>
     <description>Recent content in Tạo REST API on Thiết lập AWS Account</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="/vi/5-configure-api-gateway/5.1-create-rest-api/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://baoanh020603.github.io/aws-serverless-blog-workshop/vi/5-configure-api-gateway/5.1-create-rest-api/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
