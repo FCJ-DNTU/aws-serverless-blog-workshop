@@ -10,7 +10,7 @@ pre="<b>1. </b>"
 
 In this workshop, you will learn how to develop a **Serverless Blog Website** on AWS, using **AWS Lambda** to handle backend logic, **API Gateway** to create RESTful APIs, **DynamoDB** as a NoSQL database, **S3** to host static UI (React/Vite), and **CloudFront** to optimize content delivery performance.
 
-![Workshop Architecture](/images/workshop_architecture.png)
+![Workshop-Architecture](/images/workshop_architecture.png)
 
 ### Objectives:
 

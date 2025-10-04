@@ -31,8 +31,8 @@ Trong workshop này, bạn sẽ học cách triển khai một **Website Blog Se
 
 ### Nội dung
 
-1. [Giới thiệu](1-Introduction/)
-2. [Thiết lập tài khoản AWS và quyền IAM](2-Set-Up-AWS-Account-and-IAM-Permissions/)
+1. [Giới-thiệu](1-Introduction/)
+2. [Thiết-lập tài khoản AWS và quyền IAM](2-Set-Up-AWS-Account-and-IAM-Permissions/)
 3. [Tạo bảng DynamoDB](3-Create-DynamoDB-Table/)
 4. [Tạo Lambda Functions](4-Create-Lambda-Functions/)
 5. [Cấu hình API Gateway](5-Configure-API-Gateway/)
