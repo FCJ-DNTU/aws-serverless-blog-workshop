@@ -12,7 +12,7 @@ chapter = false
 In this workshop, you will learn how to build and deploy an **end-to-end machine learning pipeline** on AWS.  
 We will use **AWS Lambda** for preprocessing and inference, **API Gateway** to expose RESTful endpoints, **S3** for data storage, **Amazon SageMaker** for model training and hosting, **DynamoDB** for metadata storage, and **CloudWatch** for monitoring and logging.
 
-![Workshop Architecture](/images/ml_pipeline_architecture.png)
+![Workshop Architecture](/images/workshop_architecture.png)
 
 ### Objectives:
 
