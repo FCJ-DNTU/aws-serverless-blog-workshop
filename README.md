@@ -31,6 +31,6 @@ This is a Serverless Blog Website built using Node.js, React.js, and Express.js,
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/BaoAnh020603/aws-serverless-blog-workshop.git
+   git clone https://github.com/FCJ-DNTU/aws-serverless-blog-workshop.git
    cd aws-serverless-blog-workshop
 
