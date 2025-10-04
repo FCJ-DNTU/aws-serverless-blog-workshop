@@ -1,4 +1,4 @@
-baseURL = "https://baoanh020603.github.io/aws-serverless-blog-workshop/"
+baseURL = "https://fcj-dntu.github.io/aws-serverless-blog-workshop/"
 theme = "hugo-theme-learn"
 canonifyURLs = true
 
